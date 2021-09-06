@@ -1,0 +1,28 @@
+.fabric-editor-container {
+  margin: 20px;
+  padding: 5px;
+}
+
+.fabric-toolset {
+  margin: 1rem 0;
+  background-color: #FFFFFF;
+  padding: 16px;
+  border-radius: 8px;
+
+  button {
+    margin-right: 0.50rem;
+  }
+}
+
+.responsive-canvas-container {
+  overflow: scroll;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.tree-container {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 16px;
+}
