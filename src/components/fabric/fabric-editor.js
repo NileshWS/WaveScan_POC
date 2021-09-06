@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Row, Col, Tree } from 'antd';
 import './fabric-editor.scss';
-import ToolSet from './toolset.jsx';
+import ToolSet from './toolset';
 import {
   initCanvas,
   createNode,

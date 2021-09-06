@@ -1,6 +1,7 @@
 import { fabric } from 'fabric';
 import { CarryOutOutlined } from '@ant-design/icons';
 import _ from 'lodash';
+import { upload } from "./minio.service";
 
 // misc
 fabric.NamedImage = fabric.util.createClass(fabric.Image, {
@@ -58,9 +59,12 @@ const createNode = (id, title, parent) => ({
 });
 
 const addImageToCanvas = (canvasInstance, currentNodeId) => {
-  fabric.Image.fromURL(`https://picsum.photos/id/${currentNodeId}/600/600`, (oImg) => {
-    canvasInstance.add(oImg);
-  });
+  upload(canvasInstance, currentNodeId);
+
+  // temp image service
+  // fabric.Image.fromURL(`https://picsum.photos/id/${currentNodeId}/600/600`, (oImg) => {
+  //   canvasInstance.add(oImg);
+  // });
 };
 
 /**
